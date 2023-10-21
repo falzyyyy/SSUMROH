@@ -241,7 +241,9 @@ html {
 /* home section ends */
 
 /* features section starts  */
-
+.features {
+  background-color: #f9f9f9;
+}
 .features .row {
   display: flex;
   align-items: center;
