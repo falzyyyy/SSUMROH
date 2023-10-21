@@ -208,6 +208,39 @@ html {
   flex: 1 1 45rem;
 }
 
+.home .content h1 span {
+  color: var(--Soft-Blue);
+}
+
+/* CSS for typing animation */
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  padding-right: 8px;
+  display: inline-block;
+  animation: typing 3s steps(25, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
 .home .content h1 {
   font-size: 4.5rem;
   padding-block-end: 1rem 0;
@@ -284,6 +317,7 @@ html {
   color: var(--Grayish-Blue);
   padding-bottom: 4rem;
 }
+
 /* features section ends */
 
 /* downloads section starts  */
