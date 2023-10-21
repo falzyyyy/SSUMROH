@@ -251,11 +251,18 @@ html {
 }
 
 .features .row .image {
-  flex: 1 1 45rem;
+  flex: 1 1 auto; /* Lebar fleksibel */
+  display: flex;
+  justify-content: center; /* Posisikan ke tengah secara horizontal */
+  align-items: center; /* Posisikan ke tengah secara vertikal */
+  margin: 2rem 0;
 }
 
 .features .row .image img {
-  width: 100%;
+  width: 200px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .features .row .content {
@@ -266,6 +273,7 @@ html {
   font-size: 4rem;
   padding: 1rem 0;
   color: var(--Very-Dark-Blue);
+  text-align: center;
 }
 
 .features .row .content p {
