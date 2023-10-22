@@ -99,8 +99,8 @@ html {
 }
 
 .header .logo img {
-  width: 150px;
-  height: auto;
+  width: 150px; /* Atur lebar sesuai dengan ukuran yang Anda inginkan */
+  height: auto; /* Menjaga aspek gambar agar tetap proporsional */
 }
 
 .header .navbar a {
@@ -145,21 +145,13 @@ html {
   .header {
     padding: 2rem;
   }
-  .home .content {
-    flex: 1 1 50%;
-  }
-  .features .row .content {
-    flex: 1 1 45rem;
-  }
-  .article-card {
-    width: 45%;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 774px) {
   #menu-btn {
     display: initial;
   }
+
   .header .navbar {
     position: absolute;
     top: 115%;
@@ -172,23 +164,16 @@ html {
     transform: scale(0);
     transform-origin: top right;
   }
+
   .header .navbar.active {
     transform: scale(1);
   }
+
   .header .navbar a {
     margin: 2.5rem;
     text-align: center;
     display: block;
     font-size: 2rem;
-  }
-  .home .content {
-    flex: 1 1 50%;
-  }
-  .features .row .content {
-    flex: 1 1 45rem;
-  }
-  .article-card {
-    width: 100%;
   }
 }
 
@@ -196,13 +181,8 @@ html {
   html {
     font-size: 50%;
   }
-  .home .content {
-    /* Adjust this for smaller screens */
-  }
-  .features .row .content {
-    /* Adjust this for smaller screens */
-  }
 }
+/* navbar sections ends */
 
 /* home section starts  */
 
@@ -215,12 +195,16 @@ html {
 }
 
 .home .image {
-  flex: 1 1 45%;
+  flex: 1 1 45%; /* Menggunakan 45% lebar untuk gambar */
 }
 
 .home .image img {
   width: 100%;
   height: auto;
+}
+
+.home .content {
+  flex: 1 1 50%; /* Menggunakan 50% lebar untuk konten teks */
 }
 
 .home .content h1 span {
@@ -292,7 +276,6 @@ html {
 .features {
   background-color: #f9f9f9;
 }
-
 .features .row {
   display: flex;
   align-items: center;
@@ -302,10 +285,10 @@ html {
 }
 
 .features .row .image {
-  flex: 1 1 auto;
+  flex: 1 1 auto; /* Lebar fleksibel */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Posisikan ke tengah secara horizontal */
+  align-items: center; /* Posisikan ke tengah secara vertikal */
   margin: 2rem 0;
 }
 
@@ -327,7 +310,7 @@ html {
   text-align: center;
 }
 
-features .row .content p {
+.features .row .content p {
   font-size: 1.7rem;
   padding: 1rem 0;
   color: var(--Grayish-Blue);
@@ -364,21 +347,18 @@ features .row .content p {
   color: var(--Very-Dark-Blue);
 }
 
-download .box p {
+.download .box p {
   font-size: 1.7rem;
   padding-bottom: 2.5rem;
   color: var(--Grayish-Blue);
 }
 
-.logo-packet {
-  fill: var(--Soft-Blue);
-}
 /* downloads section ends */
 
 /* article */
 .article {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -386,7 +366,7 @@ download .box p {
 }
 
 .article-card {
-  width: 30%;
+  width: 50%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -436,7 +416,7 @@ download .box p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 774px) {
   .article-card {
     width: 100%;
   }
@@ -538,9 +518,9 @@ download .box p {
 .testimonial h3 {
   font-size: 18px;
   color: var(--Soft-Blue);
-}
 
-.testimonial p {
-  font-size: 16px;
-  color: #777;
+  .testimonial p {
+    font-size: 16px;
+    color: #777;
+  }
 }
