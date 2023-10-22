@@ -99,8 +99,8 @@ html {
 }
 
 .header .logo img {
-  width: 150px; /* Atur lebar sesuai dengan ukuran yang Anda inginkan */
-  height: auto; /* Menjaga aspek gambar agar tetap proporsional */
+  width: 150px;
+  height: auto;
 }
 
 .header .navbar a {
@@ -145,13 +145,21 @@ html {
   .header {
     padding: 2rem;
   }
+  .home .content {
+    flex: 1 1 50%;
+  }
+  .features .row .content {
+    flex: 1 1 45rem;
+  }
+  .article-card {
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
   #menu-btn {
     display: initial;
   }
-
   .header .navbar {
     position: absolute;
     top: 115%;
@@ -164,16 +172,23 @@ html {
     transform: scale(0);
     transform-origin: top right;
   }
-
   .header .navbar.active {
     transform: scale(1);
   }
-
   .header .navbar a {
     margin: 2.5rem;
     text-align: center;
     display: block;
     font-size: 2rem;
+  }
+  .home .content {
+    flex: 1 1 50%;
+  }
+  .features .row .content {
+    flex: 1 1 45rem;
+  }
+  .article-card {
+    width: 100%;
   }
 }
 
@@ -181,8 +196,13 @@ html {
   html {
     font-size: 50%;
   }
+  .home .content {
+    /* Adjust this for smaller screens */
+  }
+  .features .row .content {
+    /* Adjust this for smaller screens */
+  }
 }
-/* navbar sections ends */
 
 /* home section starts  */
 
@@ -191,21 +211,16 @@ html {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* main property for responsiveness */
   gap: 1.5rem;
 }
 
 .home .image {
-  flex: 1 1 45rem;
+  flex: 1 1 45%;
 }
 
 .home .image img {
   width: 100%;
-  margin-top: 5rem;
-}
-
-.home .content {
-  flex: 1 1 45rem;
+  height: auto;
 }
 
 .home .content h1 span {
@@ -277,6 +292,7 @@ html {
 .features {
   background-color: #f9f9f9;
 }
+
 .features .row {
   display: flex;
   align-items: center;
@@ -286,10 +302,10 @@ html {
 }
 
 .features .row .image {
-  flex: 1 1 auto; /* Lebar fleksibel */
+  flex: 1 1 auto;
   display: flex;
-  justify-content: center; /* Posisikan ke tengah secara horizontal */
-  align-items: center; /* Posisikan ke tengah secara vertikal */
+  justify-content: center;
+  align-items: center;
   margin: 2rem 0;
 }
 
@@ -311,7 +327,7 @@ html {
   text-align: center;
 }
 
-.features .row .content p {
+features .row .content p {
   font-size: 1.7rem;
   padding: 1rem 0;
   color: var(--Grayish-Blue);
@@ -348,7 +364,7 @@ html {
   color: var(--Very-Dark-Blue);
 }
 
-.download .box p {
+download .box p {
   font-size: 1.7rem;
   padding-bottom: 2.5rem;
   color: var(--Grayish-Blue);
@@ -358,6 +374,74 @@ html {
   fill: var(--Soft-Blue);
 }
 /* downloads section ends */
+
+/* article */
+.article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-card {
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.article-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.article-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.article-card a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.article-card a:hover {
+  background-color: #267dbd;
+}
+
+@media (max-width: 991px) {
+  .article-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-card {
+    width: 100%;
+  }
+}
+/* end */
 
 /* footer section starts */
 .footer .box-container {
@@ -454,9 +538,9 @@ html {
 .testimonial h3 {
   font-size: 18px;
   color: var(--Soft-Blue);
+}
 
-  .testimonial p {
-    font-size: 16px;
-    color: #777;
-  }
+.testimonial p {
+  font-size: 16px;
+  color: #777;
 }
