@@ -343,14 +343,21 @@ html {
 
 .download .box h3 {
   font-size: 2rem;
+  text-align: center;
   padding: 1rem 0;
   color: var(--Very-Dark-Blue);
 }
 
 .download .box p {
   font-size: 1.7rem;
+  text-align: center;
   padding-bottom: 2.5rem;
   color: var(--Grayish-Blue);
+}
+
+.download .box img {
+  max-width: 100%; /* Gambar akan memiliki lebar maksimum sejajar dengan lebar box */
+  height: auto; /* Mengikuti proporsi asli gambar */
 }
 
 /* downloads section ends */
@@ -359,6 +366,7 @@ html {
 .article {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -372,6 +380,7 @@ html {
   margin: 10px;
   padding: 20px;
   text-align: left;
+  align-items: center;
   transition: transform 0.2s;
 }
 
