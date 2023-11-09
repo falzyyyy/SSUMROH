@@ -120,7 +120,7 @@
       <h3>paket</h3>
       <p>Info lebih lengkap silahkan klik tombol pesan.</p>
       <!-- Ganti tautan ke nomor WhatsApp -->
-      <a href="https://wa.me/6281379641275" class="all-btn">Pesan!!</a>
+      <a href="https://wa.me/6281379641275" class="all-btn pesan-btn">Pesan!!</a>
     </div>
 
     <!-- Lakukan perubahan serupa untuk elemen-elemen berikutnya -->
@@ -129,7 +129,7 @@
       <h3>Paket</h3>
       <p>Info lebih lengkap silahkan klik tombol pesan.</p>
       <!-- Ganti tautan ke nomor WhatsApp -->
-      <a href="https://wa.me/6281379641275" class="all-btn">Pesan!!</a>
+      <a href="https://wa.me/6281379641275" class="all-btn pesan-btn">Pesan!!</a>
     </div>
 
     
@@ -204,13 +204,42 @@
 
   <!-- contact -->
 
-<section class="contact">
+<!-- Tambahkan bagian ini di bawah section artikel -->
+<section class="contact" id="contact" data-aos="fade-up">
   <div class="contact-container">
     <h1>Contact Us</h1>
+    <p>Have a question or want to get in touch? Fill out the form below:</p>
+
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
   </div>
 </section>
 
+
   <!-- contact section end -->
+
+<!-- modal -->
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalMessage"></p>
+  </div>
+</div>
+
+<!-- modal end -->
+
     <!-- footer section starts  -->
 
     <section class="footer" id="footer">
@@ -228,9 +257,9 @@
 
         <div class="box">
           <h3>contact info</h3>
-          <a href="#https://wa.me/6281379641275"><i class="fas fa-phone"></i>+62 813-7964-1275</a>
-          <a href="#https://wa.me/628127971858"><i class="fas fa-phone"></i>+62 812-7971-858</a>
-          <a href="#https://wa.me/6282182662801"><i class="fas fa-phone"></i>+62 821-8266-2801</a>
+          <a href="https://wa.me/6281379641275"><i class="fas fa-phone"></i>+62 813-7964-1275</a>
+          <a href="https://wa.me/628127971858"><i class="fas fa-phone"></i>+62 812-7971-858</a>
+          <a href="https://wa.me/6282182662801"><i class="fas fa-phone"></i>+62 821-8266-2801</a>
           <a href="#"><i class="fas fa-envelope"></i>dimayanti69@gmail.com</a>
           
           <a href="#"><i class="fas fa-map-marker-alt"></i>Palembang, Indonesia</a>
@@ -245,6 +274,11 @@
           
         </div>
       </div>
+
+      <!-- contact -->
+
+      
+<!-- end contact -->
 
       <!-- video section -->
 
